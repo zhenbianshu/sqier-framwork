@@ -1,13 +1,14 @@
 <?php
 namespace Controller;
 
-use Sqier\BaseController;
+use Sqier\Controller;
 use Model\Test;
 
-class Index extends BaseController {
+class Index extends Controller {
     public function indexAction() {
         $model = new Test();
         $result = $model->doSomething();
-        echo $result;
+
+        $this->render(['sq'=>$result]);
     }
 }

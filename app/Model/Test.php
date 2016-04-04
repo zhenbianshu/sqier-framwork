@@ -1,10 +1,11 @@
 <?php
 namespace Model;
 
-use Sqier\BaseModel;
+use Sqier\Model;
 
-class Test extends BaseModel {
+class Test extends Model {
     public function doSomething() {
-        return "welcome to SQIER!";
+        $sq = "welcome to SQIER!";
+        return $sq;
     }
 }
